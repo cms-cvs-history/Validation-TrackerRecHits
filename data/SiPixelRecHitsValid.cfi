@@ -1,0 +1,4 @@
+  module pixRecHitsValid = SiPixelRecHitsValid {
+          untracked string outputFile = 'pixelrechitshisto.root'
+          untracked bool verbose = true
+  }
