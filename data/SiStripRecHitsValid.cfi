@@ -1,0 +1,4 @@
+   module stripRecHitsValid = SiStripRecHitsValid {
+          untracked string outputFile = 'sistriprechitshisto.root'
+          untracked bool verbose = true
+  }
