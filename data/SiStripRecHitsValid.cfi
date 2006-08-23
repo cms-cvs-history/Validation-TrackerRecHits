@@ -17,9 +17,5 @@ module stripRecHitsValid = SiStripRecHitsValid {
   #TOB
   "TrackerHitsTOBLowTof","TrackerHitsTOBHighTof",
   #TEC
-  "TrackerHitsTECLowTof","TrackerHitsTECHighTof",
-  #BPIX
-  "TrackerHitsPixelBarrelLowTof","TrackerHitsPixelBarrelHighTof",
-  #FPIX
-  "TrackerHitsPixelEndcapLowTof","TrackerHitsPixelEndcapHighTof"}
+  "TrackerHitsTECLowTof","TrackerHitsTECHighTof"}
  }
