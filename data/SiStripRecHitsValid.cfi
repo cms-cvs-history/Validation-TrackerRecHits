@@ -1,7 +1,25 @@
 module stripRecHitsValid = SiStripRecHitsValid {
   untracked string outputFile = 'sistriprechitshisto.root'
   untracked bool verbose = true
-  InputTag matchedRecHits = SiStripRecHits2D:matchedRecHits
-  InputTag rphiRecHits    = SiStripRecHits2D:rphiRecHits 
-  InputTag stereoRecHits  = SiStripRecHits2D:stereoRecHits
-}
+  string RecHitProducer = "siStripMatchedRecHits"
+  InputTag matchedRecHits = siStripMatchedRecHits:matchedRecHit
+  InputTag rphiRecHits    = siStripMatchedRecHits:rphiRecHit
+  InputTag stereoRecHits  = siStripMatchedRecHits:stereoRecHit
+  bool associateStrip = true
+  bool associatePixel = false
+
+  vstring ROUList = {
+  #For running only strip or pixel comment out the appropriate strings
+  #TIB
+  "TrackerHitsTIBLowTof","TrackerHitsTIBHighTof",
+  #TID
+  "TrackerHitsTIDLowTof","TrackerHitsTIDHighTof",
+  #TOB
+  "TrackerHitsTOBLowTof","TrackerHitsTOBHighTof",
+  #TEC
+  "TrackerHitsTECLowTof","TrackerHitsTECHighTof",
+  #BPIX
+  "TrackerHitsPixelBarrelLowTof","TrackerHitsPixelBarrelHighTof",
+  #FPIX
+  "TrackerHitsPixelEndcapLowTof","TrackerHitsPixelEndcapHighTof"}
+ }
