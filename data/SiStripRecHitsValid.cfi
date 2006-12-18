@@ -7,7 +7,7 @@ module stripRecHitsValid = SiStripRecHitsValid {
   InputTag stereoRecHits  = siStripMatchedRecHits:stereoRecHit
   bool associateStrip = true
   bool associatePixel = false
-
+  bool associateRecoTracks = false
   vstring ROUList = {
   #For running only strip or pixel comment out the appropriate strings
   #TIB
