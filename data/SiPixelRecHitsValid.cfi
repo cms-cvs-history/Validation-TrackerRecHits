@@ -1,6 +1,7 @@
 module pixRecHitsValid = SiPixelRecHitsValid {
   bool associatePixel = true
   bool associateStrip = false
+  bool associateRecoTracks = false
   vstring ROUList = {
         #For running only strip or pixel comment out the appropriate strings
         #TIB
