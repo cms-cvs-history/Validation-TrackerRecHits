@@ -1,0 +1,4 @@
+include "Validation/TrackerRecHits/data/SiPixelRecHitsValid.cfi"
+include "Validation/TrackerRecHits/data/SiStripRecHitsValid.cfi"
+
+sequence trackerRecHitsValidation = {pixRecHitsValid, stripRecHitsValid}
