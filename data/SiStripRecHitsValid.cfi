@@ -11,11 +11,11 @@ module stripRecHitsValid = SiStripRecHitsValid {
   vstring ROUList = {
   #For running only strip or pixel comment out the appropriate strings
   #TIB
-  "TrackerHitsTIBLowTof","TrackerHitsTIBHighTof",
+  "g4SimHitsTrackerHitsTIBLowTof","g4SimHitsTrackerHitsTIBHighTof",
   #TID
-  "TrackerHitsTIDLowTof","TrackerHitsTIDHighTof",
+  "g4SimHitsTrackerHitsTIDLowTof","g4SimHitsTrackerHitsTIDHighTof",
   #TOB
-  "TrackerHitsTOBLowTof","TrackerHitsTOBHighTof",
+  "g4SimHitsTrackerHitsTOBLowTof","g4SimHitsTrackerHitsTOBHighTof",
   #TEC
-  "TrackerHitsTECLowTof","TrackerHitsTECHighTof"}
+  "g4SimHitsTrackerHitsTECLowTof","g4SimHitsTrackerHitsTECHighTof"}
  }

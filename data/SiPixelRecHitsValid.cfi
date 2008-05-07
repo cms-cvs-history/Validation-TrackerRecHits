@@ -13,9 +13,9 @@ module pixRecHitsValid = SiPixelRecHitsValid {
         #TEC
         #"TrackerHitsTECLowTof","TrackerHitsTECHighTof",
         #BPIX
-        "TrackerHitsPixelBarrelLowTof","TrackerHitsPixelBarrelHighTof",
+        "g4SimHitsTrackerHitsPixelBarrelLowTof","g4SimHitsTrackerHitsPixelBarrelHighTof",
         #FPIX
-        "TrackerHitsPixelEndcapLowTof","TrackerHitsPixelEndcapHighTof"
+        "g4SimHitsTrackerHitsPixelEndcapLowTof","g4SimHitsTrackerHitsPixelEndcapHighTof"
   }
 
   untracked string outputFile = 'pixelrechitshisto.root'
